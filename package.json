@@ -4,20 +4,24 @@
     "description": "",
     "main": "server/server.js",
     "scripts": {
-      "start": "npm start",
-      "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-      "install": "cd server && npm i && cd ../client && npm i",
-      "build": "cd client && npm run build",
-      "render-build": "npm install && npm run build"
+        "start": "npm start",
+        "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "build": "cd client && npm run build",
+        "render-build": "npm install && npm run build"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "concurrently": "^5.1.0"
+        "concurrently": "^5.1.0"
     },
     "dependencies": {
-      "cors": "^2.8.5"
+        "@apollo/server": "^4.11.0",
+        "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.5.3"
     }
-  }
-  
+}
